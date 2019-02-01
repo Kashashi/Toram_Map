@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>花蜜系統-托蘭地圖</title>
+<!--CSS插入區開始-->
+<style type="text/css">
+body { /* 背景設定 */
+background-color: #ffd1a4;
+}
+header { /*設定標題*/
+	font-size:50px;
+	color:#0000c6;
+}
+.map_tile{ /*設定方格大小*/
+width: 150px;
+height: 150px;
+background:rgba(204, 204, 204, 0.59);
+border-width:1px;
+border-style:solid;
+}
+.map_left{/*方格向右並排*/
+float:left;
+}
+div {
+height: 150px;
+}
+.root_div{
+width:4500px;
+}
+div.road_tile{
+background:rgba(19, 224, 46, 1);
+}
+</style>
+<!--CSS插入區結束-->
+</head>
+<body>
+<header>
+托蘭異世錄世界地圖
+</header>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">米斯魯納山遺跡</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">米斯魯納山::入口</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">庫洛奈森林::北部</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">忘卻洞窟</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">洛庫庫平原</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">諾芙::薩特利卡</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">庫洛奈森林::東部</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">塔納斯礦道</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">路菲納斯宅邸</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">大型戴米馬其納製造廠</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">希克爾深谷</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">沛立古羅廢棄地</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">辛戈拉勒遺跡</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">灼燒地溝</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">托魯巴斯草原</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">路菲那斯宅邸::庭園</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">阿爾堤玫亞::外圍前</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">怪物之森</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">小型戴米馬其納製造廠</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">庫瀾司沛貧民窟</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">自動砲台防衛線</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">艾因可蘭</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">戰士搖籃</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">阿爾堤玫亞宮殿</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">阿爾堤玫亞下水道::東</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">信天翁之巢</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">西姆科拉卡遺跡</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">索費尼山岳要塞</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">朋迪冰谷</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">普原生素體</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">暗之館</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">黑川跡地</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left road_tile">多洛馬廣場附近</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">阿爾堤玫亞街道</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">阿爾堤玫亞下水道::東南</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">阿爾堤玫亞下水道::南</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">豐饒之角儲水池</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">巨型水晶工廠</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">永劫之途</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">月之恩澤山</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">暗之荒野</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">起始庭院</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">暗之鏡</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">昇華觀園</div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">布萊耶研究所::1號樓</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">黑鴉監獄</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">通地塔</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">鄧肯峽谷</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">彼岸黃泉</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">	暗之城</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">轉生泉</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">魔法廢棄物工廠</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">堤奧斯丘陵</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">流浪者平原</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">砂石階梯</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">阿卡克廢城</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">邁巴羅森林</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">新月鬼殿</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">泥黑爾沼澤</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">焦熱山峰</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">斯卡羅街區</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">艾爾::斯卡羅</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">馬雅蒂拉</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">豪塔幽谷</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">史多姆連通道</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">盧泰斯巨穴</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">悠爾高原</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">混生地帶</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">維提卡燎原</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">杜希市集</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">達加諾平原</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">哈迪丘陵</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left road_tile">奧拉達古塔</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">狄帕西水道</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">X</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">盧迪翁遺跡</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">尼賽爾山</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">索菲亞街道</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">規劃中地區</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">淵底的遺跡</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">聖堤里歐高原</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">費戈莊園</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">莊園開墾地</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">艾特馬廢墟</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">思朵斷崖</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">伊庫耳湖沼區</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">廢棄的寺院街</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">萊卡平原</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">異界之門</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">異界之前</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">上古女帝陵墓</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">艾特修砦</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">左茲達遺跡</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">里諾姆平原</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">薩哈姆地下洞穴</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">廢棄的寺院</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">雷谷鹽原遊民營</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">凱渥斯峽谷</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">維雪蝕刻地</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">法比索疆域</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">消失的城鎮</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">里比可洞窟</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile">薩哈姆陷落地帶</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">寇達象丘</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">羅諾戈斷崖</div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+</body>
+</html>
