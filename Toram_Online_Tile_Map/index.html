@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>托蘭工匠專用地圖</title>
+<!--CSS插入區開始-->
+<link rel=stylesheet type="text/css" href="main.css">
+<!--CSS插入區結束-->
+</head>
+<body>
+<header>
+<div id="nov_header_div">
+<script src="main.js"></script>
+</div>
+</header>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_001"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_002"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_003"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_004"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_005"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_006"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_007"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_008"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_009"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_010"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_011"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_012"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_013"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_014"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_015"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_016"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_017"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_018"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_019"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_020"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_021"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_022"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_023"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_024"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_025"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_026"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_027"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_028"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_029"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_030"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_031"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_032"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left road_tile" id="object_033"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_034"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_035"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_036"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_037"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_038"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_039"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_040"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_041"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_042"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_043"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_044"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_045"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_046"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_047"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_048"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_049"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_050"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_051"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_052"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_053"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_054"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_055"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_056"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_057"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_058"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_059"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_060"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_061"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_062"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_063"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_064"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_065"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_066"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_067"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_068"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_069"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_070"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_071"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_072"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left road_tile" id="object_073"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_074"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile">X</div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_075"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_076"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_077"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_078"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_079"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_080"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_081"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_082"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_083"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_084"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_085"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_086"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_087"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_088"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_089"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_090"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_091"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_092"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_093"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_094"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_095"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_096"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_097"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_098"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_099"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_100"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<div class="root_div">
+<span>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_101"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left road_tile" id="object_102"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_103"></div>
+<div class="map_tile map_left road_tile"></div>
+<div class="map_tile map_left road_tile" id="object_104"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+<div class="map_tile map_left"></div>
+</span>
+</div>
+<script src="./Root_div/object.js"></script>
+</body>
+</html>

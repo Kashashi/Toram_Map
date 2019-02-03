@@ -1,0 +1,28 @@
+body { /* 背景設定 */
+background-color: #ffd1a4;
+}
+header { /*設定標題*/
+font-size:50px;
+color:#0000c6;
+}
+.map_tile{ /*設定方格大小*/
+width:150px;
+height:150px;
+background:rgba(204, 204, 204, 0.59);
+border-width:1px;
+border-style:solid;
+}
+.map_left{/*方格向右並排*/
+float:left;
+}
+#nov_header_div{
+height:55px;
+width:450px;
+}
+.root_div{
+width:4500px;
+height:150px;
+}
+div.road_tile{
+background:rgba(19, 224, 46, 1);
+}
