@@ -38,6 +38,10 @@ if(browser.versions.mobile||browser.versions.android||browser.versions.ios){
 	window.close();
 }
 
+if(browser.versions.qq||browser.versions.weixin||browser.versions.webApp||browser.versions.iPhone||browser.versions.iPad){
+	window.opener = null;
+	window.close();
+}
 </script>
 <title>托蘭工匠專用地圖</title>
 <!--CSS插入區開始-->
